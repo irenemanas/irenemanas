@@ -14,49 +14,50 @@
   </head>
   <body class="page">
     <header>
-      <h1>ireneManas Survey Form</h1>
-      <p>Thank you for taking the time to help me improve my porfolio</p>
+      <h1 id="title">ireneManas Survey Form</h1>
+      <p id="description">Thank you for taking the time to help me improve my porfolio</p>
     </header>
     <main>
-      <form action="">
-        <label for=""
+      <form action="" id="survey-form">
+        <label id="name-label" for="name"
           >Name
-          <input type="text" placeholder="Enter your name" />
+          <input id="name" type="text" placeholder="Enter your name" />
         </label>
-        <label for=""
+        <label id="email-label" for="email"
           >Email
-          <input type="email" placeholder="Enter your Email" />
+          <input id="email" type="email" placeholder="Enter your Email" />
         </label>
-        <label for=""
+        <label id="number-label" for="number"
           >Age (optional)
-          <input type="number" placeholder="Age" />
+          <input id="number" type="number" placeholder="Age" />
         </label>
-        <label for=""
+        <label for="role"
           >Which option best describes your current role?
-          <select name="" id="">
-            <option value="">Select current role</option>
-            <option value="">Coding Student</option>
-            <option value="">Junior Front-End Developer</option>
-            <option value="">Senior Front-End Developer</option>
-            <option value="">Recruiter</option>
-            <option value="">IT Manager</option>
+          <select name="role" id="role">
+            <option value="select" selected>Select current role</option>
+            <option value="student">Coding Student</option>
+            <option value="j-developer">Junior Front-End Developer</option>
+            <option value="s-developer">Senior Front-End Developer</option>
+            <option value="recruiter">Recruiter</option>
+            <option value="manager">IT Manager</option>
           </select> </label
         >Would you recommend ireneManas profile to a recruiter?
         <label for="">
-          <input type="checkbox" /> Definetely <input type="checkbox" /> Maybe <input type="checkbox" /> Not sure
+          <input type="radio" name="opinion" checked /> Definetely <input type="radio" name="opinion" /> Maybe
+          <input type="radio" name="opinion" /> Not sure
         </label>
         <label for=""
           >What is your favourite feature of ireneManas portfolio?
           <select name="" id="">
-            <option value="">Select an option</option>
-            <option value="">CSS3</option>
-            <option value="">HTML5</option>
-            <option value="">Responsive</option>
-            <option value="">UX/UI</option>
+            <option value="option" selected>Select an option</option>
+            <option value="css">CSS3</option>
+            <option value="html">HTML5</option>
+            <option value="responsive">Responsive</option>
+            <option value="ux-ui">UX/UI</option>
           </select>
         </label>
         <label for=""
-          >What would you like to see improved? (Check all that apply) <input type="checkbox" />Web layouts
+          >What would you like to see improved? (Check all that apply) <input type="checkbox" checked />Web layouts
           <input type="checkbox" />JavaScript projects <input type="checkbox" />Bootstrap projects
           <input type="checkbox" />React projects <input type="checkbox" />Angular projects <input type="checkbox" />Web
           services (APIs) <input type="checkbox" />SPAs with React <input type="checkbox" />Back-end projects (NodeJS)
@@ -66,7 +67,7 @@
           >Any comments or suggestions?
           <textarea name="" id="" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
         </label>
-        <input type="submit" />
+        <input type="submit" id="submit" />
       </form>
     </main>
   </body>
