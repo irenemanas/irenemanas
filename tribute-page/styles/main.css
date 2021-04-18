@@ -5,8 +5,22 @@
 
 .page {
   box-sizing: border-box;
-  background-color: #f1f1f3;
+  background-color: #eee;
   line-height: 1.5;
+  margin-top: 30px;
+}
+@media all and (min-width: 768px) {
+  .page {
+    margin: 5px 2px;
+    background-color: white;
+  }
+}
+@media all and (min-width: 768px) {
+  .background {
+    background-color: #eee;
+    margin: 30px 10px;
+    border-radius: 5px;
+  }
 }
 
 .fa-bars {
@@ -45,6 +59,12 @@
   margin: 0;
   font-size: 12px;
 }
+@media all and (min-width: 768px) {
+  .hero {
+    max-width: 850px;
+    margin: 0 auto;
+  }
+}
 
 .hero__photo {
   width: 100%;
@@ -55,27 +75,39 @@
     max-width: 900px;
     margin: 0 auto;
   }
+}
 .hero__legend {
   display: block;
   background-color: white;
   text-align: center;
-  
+  margin-top: 10px;
+  font-size: 14px;
 }
 @media all and (min-width: 768px) {
   .hero__legend {
-    font-size: 14px;
+    font-size: 16px;
   }
+}
 .bio {
   display: block;
   margin-left: 20px;
 }
+@media all and (min-width: 768px) {
+  .bio {
+    margin: 0 200px;
+    font-size: 16px;
+  }
+}
 .bio__title {
   text-align: center;
+  font-weight: 500;
 }
 .bio__content {
-  font-size: 10px;
-  font-weight: 400;
-  margin-left: 16px;
+  margin-left: 18px;
+  font-size: 16px;
+}
+.bio__content--element {
+  padding-bottom: 10px;
 }
 .quote {
   font-size: smaller;
@@ -84,4 +116,10 @@
 .footer {
   text-align: center;
   font-size: smaller;
+}
+@media all and (min-width: 768px) {
+  .footer {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
 }
