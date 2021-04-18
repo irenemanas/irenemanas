@@ -13,42 +13,58 @@
     />
   </head>
   <body class="page">
-    <header>
+    <header class="header">
       <h1 id="title">ireneManas Survey Form</h1>
       <p id="description">Thank you for taking the time to help me improve my porfolio</p>
     </header>
-    <main>
+    <main class="main">
       <form action="" id="survey-form">
         <label id="name-label" for="name"
           >Name
-          <input id="name" type="text" placeholder="Enter your name" />
+          <input id="name" class="data__input" type="text" placeholder="Enter your name" />
         </label>
         <label id="email-label" for="email"
           >Email
-          <input id="email" type="email" placeholder="Enter your Email" />
+          <input id="email" class="data__input" type="email" placeholder="Enter your Email" />
         </label>
         <label id="number-label" for="number"
           >Age (optional)
-          <input id="number" type="number" placeholder="Age" />
+          <input id="number" class="data__input" type="number" placeholder="Age" />
         </label>
         <label for="role"
           >Which option best describes your current role?
-          <select name="role" id="role">
+          <select name="role" id="role" class="data__input">
             <option value="select" selected>Select current role</option>
             <option value="student">Coding Student</option>
             <option value="j-developer">Junior Front-End Developer</option>
             <option value="s-developer">Senior Front-End Developer</option>
             <option value="recruiter">Recruiter</option>
             <option value="manager">IT Manager</option>
-          </select> </label
-        >Would you recommend ireneManas profile to a recruiter?
-        <label for="">
-          <input type="radio" name="opinion" checked /> Definetely <input type="radio" name="opinion" /> Maybe
-          <input type="radio" name="opinion" /> Not sure
+          </select>
         </label>
-        <label for=""
+        <section class="section">
+          <label for="opinion"
+            >Would you recommend ireneManas profile to a recruiter?
+            <div>
+              <input type="radio" name="opinion" id="opinion" class="opinion__input" checked /><span class="radio-label"
+                >Definetely</span
+              >
+            </div>
+            <div>
+              <input type="radio" name="opinion" id="opinion" class="opinion__input" /><span class="radio-label"
+                >Maybe</span
+              >
+            </div>
+            <div>
+              <input type="radio" name="opinion" id="opinion" class="opinion__input" /><span class="radio-label"
+                >Not sure</span
+              >
+            </div>
+          </label>
+        </section>
+        <label for="feature"
           >What is your favourite feature of ireneManas portfolio?
-          <select name="" id="">
+          <select name="" id="feature" class="data__input">
             <option value="option" selected>Select an option</option>
             <option value="css">CSS3</option>
             <option value="html">HTML5</option>
@@ -56,18 +72,76 @@
             <option value="ux-ui">UX/UI</option>
           </select>
         </label>
-        <label for=""
-          >What would you like to see improved? (Check all that apply) <input type="checkbox" checked />Web layouts
-          <input type="checkbox" />JavaScript projects <input type="checkbox" />Bootstrap projects
-          <input type="checkbox" />React projects <input type="checkbox" />Angular projects <input type="checkbox" />Web
-          services (APIs) <input type="checkbox" />SPAs with React <input type="checkbox" />Back-end projects (NodeJS)
-          <input type="checkbox" />Databases (SQL)
-        </label>
-        <label for=""
+        <section class="section">
+          <label for="improvement"
+            >What would you like to see improved? (Check all that apply)
+            <div>
+              <input type="checkbox" id="improvement" class="improvement__input--1" checked /><span
+                class="checkbox-label"
+                >Web layouts</span
+              >
+            </div>
+            <div>
+              <input type="checkbox" id="improvement" class="improvement__input" /><span class="checkbox-label"
+                >JavaScript projects</span
+              >
+            </div>
+            <div>
+              <input type="checkbox" id="improvement" class="improvement__input" /><span class="checkbox-label"
+                >Bootstrap projects</span
+              >
+            </div>
+            <div>
+              <input type="checkbox" id="improvement" class="improvement__input" /><span class="checkbox-label"
+                >Bootstrap projects</span
+              >
+            </div>
+            <div>
+              <input type="checkbox" id="improvement" class="improvement__input" /><span class="checkbox-label"
+                >React projects</span
+              >
+            </div>
+            <div>
+              <input type="checkbox" id="improvement" class="improvement__input" /><span class="checkbox-label"
+                >Angular projects</span
+              >
+            </div>
+            <div>
+              <input type="checkbox" id="improvement" class="improvement__input" /><span class="checkbox-label"
+                >Web services (APIs)</span
+              >
+            </div>
+            <div>
+              <input type="checkbox" id="improvement" class="improvement__input" /><span class="checkbox-label"
+                >SPAs with React</span
+              >
+            </div>
+            <div>
+              <input type="checkbox" id="improvement" class="improvement__input" /><span class="checkbox-label"
+                >Back-end projects (NodeJS)</span
+              >
+            </div>
+            <div>
+              <input type="checkbox" id="improvement" class="improvement__input" /><span class="checkbox-label"
+                >Databases (SQL)</span
+              >
+            </div>
+          </label>
+        </section>
+        <label for="comments"
           >Any comments or suggestions?
-          <textarea name="" id="" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+          <div class="textarea">
+            <textarea
+              name=""
+              id="comments"
+              class="textarea"
+              cols="40"
+              rows="5"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
         </label>
-        <input type="submit" id="submit" />
+        <input type="submit" value="Submit" id="submit" />
       </form>
     </main>
   </body>
