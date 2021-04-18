@@ -43,21 +43,28 @@
   background: white;
   padding: 10px;
   margin: 0;
+  font-size: 12px;
 }
 
 .hero__photo {
   width: 100%;
   display: block;
 }
-
+@media all and (min-width: 768px) {
+  .hero__photo {
+    max-width: 900px;
+    margin: 0 auto;
+  }
 .hero__legend {
   display: block;
-  font-size: 12px;
-  font-weight: 200;
   background-color: white;
   text-align: center;
-  margin-top: 5px;
+  
 }
+@media all and (min-width: 768px) {
+  .hero__legend {
+    font-size: 14px;
+  }
 .bio {
   display: block;
   margin-left: 20px;
@@ -66,7 +73,7 @@
   text-align: center;
 }
 .bio__content {
-  font-size: smaller;
+  font-size: 10px;
   font-weight: 400;
   margin-left: 16px;
 }
