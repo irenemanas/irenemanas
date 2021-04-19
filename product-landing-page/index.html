@@ -6,36 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Landing Page</title>
     <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="icon" href="./images/favicon.ico" />
+    <link rel="icon" href="./images/neon-guitar.ico" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
       integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY="
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header id="header">
-      <img id="header-img" src="" alt="" />
-      <h3>premium guitars</h3>
+    <header id="header" class="header">
+      <div class="title-container">
+        <img
+          id="header-img"
+          class="header__image"
+          src="./images/neon-guitar.png"
+          alt="guitar drowing"
+          title="guitar drowing"
+        />
+        <h3 class="header__title">premium guitars</h3>
+      </div>
       <nav id="nav-bar">
         <a class="nav-link" href="">features</a>
         <a class="nav-link" href="">how it works</a>
         <a class="nav-link" href="">pricing</a>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <section class="heading">
-        <h2>handcrafted, home-made masterpieces</h2>
+        <h2>Handcrafted, home-made masterpieces</h2>
         <form action="">
-          <input type="email" id="email" placeholder="Enter your email address" />
-          <input type="submit" id="submit" value="GET STARTED" />
+          <input type="email" id="email" placeholder="Enter your email address" class="email-input" />
+          <input type="submit" id="submit" value="GET STARTED" class="submit-input" />
         </form>
       </section>
       <section class="features">
         <div>
           <img src="" alt="" />
-          <h2>premium materials</h2>
+          <h2 class="feature-title">premium materials</h2>
           <p>
             Our guitars use the best types of woods with good tonal qualities ans good sustain. You’ll be well on your
             way to finding the right guitar for you.
@@ -43,7 +56,7 @@
         </div>
         <div>
           <img src="" alt="" />
-          <h2>fast shipping</h2>
+          <h2 class="feature-title">fast shipping</h2>
           <p>
             We make sure you receive your guitar as soon as wenhave finished making it. We also provide free returns if
             you are not satisfied
@@ -51,7 +64,7 @@
         </div>
         <div>
           <img src="" alt="" />
-          <h2>quality assurance</h2>
+          <h2 class="feature-title">quality assurance</h2>
           <p>
             For every purchase you make, we will ensure there are no damages or faults and we will check and test the
             pitch of your instrument.
@@ -59,7 +72,10 @@
         </div>
       </section>
       <section class="how">
-        <video id="video" src=""></video>
+        <iframe class="video" 
+        src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+        </iframe>
+        </video>
       </section>
       <section class="pricing">
         <div>
