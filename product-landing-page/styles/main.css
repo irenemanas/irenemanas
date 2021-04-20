@@ -46,6 +46,9 @@
   color: lightblue;
   text-decoration: none;
 }
+.nav-link:hover {
+  color: white;
+}
 
 .main {
   position: relative;
@@ -78,11 +81,17 @@
   border: 1px gray solid;
   padding-top: 3px;
 }
+#features {
+  scroll-margin-top: 160px;
+}
 .feature-title {
   text-transform: capitalize;
 }
 .features__content {
   font-size: 18px;
+}
+#how {
+  scroll-margin-top: 160px;
 }
 .video {
   width: 100%;
@@ -90,6 +99,9 @@
   max-width: 500px;
   max-height: 380px;
   margin-top: 40px;
+}
+#pricing {
+  scroll-margin-top: 154px;
 }
 .pricing {
   display: flex;
